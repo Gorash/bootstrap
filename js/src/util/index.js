@@ -38,7 +38,7 @@ const getSelectorFromElement = element => {
   }
 
   try {
-    return document.querySelector(selector) ? selector : null
+    return selector && document.querySelector(selector) ? selector : null
   } catch (error) {
     return null
   }
